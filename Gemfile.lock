@@ -1,6 +1,15 @@
 GIT
+  remote: git://github.com/pyromaniac/active_data.git
+  revision: 6789235f2ee65508ed4f8244e94bbd684abc60ed
+  specs:
+    active_data (0.3.0)
+      activemodel (>= 3.2)
+      activesupport (>= 3.2)
+      tzinfo
+
+GIT
   remote: git://github.com/toptal/chewy.git
-  revision: 4a2812f5b223bdf82f40664b8899f30cedb0cc3f
+  revision: eb152373a9306f5c1a906413e8cdcf453dd81cef
   specs:
     chewy (0.1.0)
       activesupport (>= 3.2)
@@ -33,6 +42,8 @@ GEM
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
+    acts-as-taggable-on (3.0.1)
+      rails (>= 3, < 5)
     ansi (1.4.3)
     arel (4.0.2)
     atomic (1.1.14)
@@ -62,12 +73,20 @@ GEM
     execjs (2.0.2)
     factory_girl (4.3.0)
       activesupport (>= 3.0.0)
+    factory_girl_rails (4.3.0)
+      factory_girl (~> 4.3.0)
+      railties (>= 3.0.0)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
     ffaker (1.23.0)
+    haml (4.0.5)
+      tilt
     hike (1.2.3)
     i18n (0.6.9)
     json (1.8.1)
+    kaminari (0.15.1)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -137,12 +156,17 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_data!
+  acts-as-taggable-on
   chewy!
   coffee-rails (~> 4.0.0)
   database_cleaner
   elasticsearch-extensions
   factory_girl
+  factory_girl_rails
   ffaker
+  haml
+  kaminari
   rails (= 4.0.2)
   rspec-rails
   sass-rails (~> 4.0.0)
