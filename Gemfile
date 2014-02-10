@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 gem 'sqlite3'
 
-gem 'chewy', github: 'toptal/chewy'
+gem 'chewy'
 gem 'elasticsearch-extensions'
 gem 'active_data', github: 'pyromaniac/active_data'
 gem 'acts-as-taggable-on'

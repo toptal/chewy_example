@@ -7,14 +7,6 @@ GIT
       activesupport (>= 3.2)
       tzinfo
 
-GIT
-  remote: git://github.com/toptal/chewy.git
-  revision: eb152373a9306f5c1a906413e8cdcf453dd81cef
-  specs:
-    chewy (0.1.0)
-      activesupport (>= 3.2)
-      elasticsearch
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -48,6 +40,9 @@ GEM
     arel (4.0.2)
     atomic (1.1.14)
     builder (3.1.4)
+    chewy (0.2.0)
+      activesupport (>= 3.2)
+      elasticsearch
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -158,7 +153,7 @@ PLATFORMS
 DEPENDENCIES
   active_data!
   acts-as-taggable-on
-  chewy!
+  chewy
   coffee-rails (~> 4.0.0)
   database_cleaner
   elasticsearch-extensions
