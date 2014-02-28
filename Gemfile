@@ -5,6 +5,7 @@ gem 'rails', '4.0.2'
 gem 'sqlite3'
 
 gem 'chewy'
+gem 'elasticsearch', '>= 1.0.0'
 gem 'elasticsearch-extensions'
 gem 'active_data', github: 'pyromaniac/active_data'
 gem 'acts-as-taggable-on'

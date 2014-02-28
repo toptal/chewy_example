@@ -6,7 +6,7 @@ describe EntertainmentSearch do
   end
 
   def import *args
-    EntertainmentIndex.import *args
+    EntertainmentIndex.import! *args
   end
 
   before { EntertainmentIndex.purge! } # deletes and creates index
