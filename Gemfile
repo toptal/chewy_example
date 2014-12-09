@@ -8,7 +8,7 @@ gem 'chewy'
 gem 'elasticsearch', '>= 1.0.0'
 gem 'elasticsearch-extensions'
 gem 'active_data', github: 'pyromaniac/active_data'
-gem 'acts-as-taggable-on'
+gem 'acts-as-taggable-on', '3.0.1'
 gem 'kaminari'
 
 gem 'haml'
