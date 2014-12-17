@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 gem 'sqlite3'
 
-gem 'chewy'
+gem 'chewy', github: 'toptal/chewy'
 gem 'elasticsearch', '>= 1.0.0'
 gem 'elasticsearch-extensions'
 gem 'active_data', github: 'pyromaniac/active_data'
@@ -15,7 +15,6 @@ gem 'haml'
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
-
 
 group :development, :test do
   gem 'rspec-rails'

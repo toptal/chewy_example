@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe EntertainmentIndex do
-
   describe 'Tag' do
     let(:books) { create_list :book, 2, tag_list: 'tag1' }
     specify do
@@ -10,5 +9,4 @@ describe EntertainmentIndex do
       end.to update_index('entertainment#book').and_reindex(books, with: {tags: ['tag2']})
     end
   end
-
 end
