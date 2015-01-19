@@ -8,6 +8,6 @@ To try it:
 * Clone this repo
 * `bundle install`
 * `RAILS_ENV=test rake elasticsearch:start db:setup && rake spec` for tests
-* `rake db:setup && rake chewy:reset:all && rails s` for trying
+* `rake db:setup && rake chewy:reset && rails s` for trying
 
 To find ActsAsTaggableOn monkeypatches look at the `config/initializers/acts_as_taggable_on.rb`
