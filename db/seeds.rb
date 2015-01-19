@@ -6,6 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-FactoryGirl.create_list :book, 10
-FactoryGirl.create_list :movie, 10
-FactoryGirl.create_list :cartoon, 10
+Chewy.strategy(:atomic) do
+  FactoryGirl.create_list :book, 10
+  FactoryGirl.create_list :movie, 10
+  FactoryGirl.create_list :cartoon, 10
+end
