@@ -1,22 +1,22 @@
 FactoryGirl.define do
   factory :dude do
-    name { Faker::Name.name }
+    name { FFaker::Name.name }
   end
 
   factory :book do
-    title { Faker::Movie.title }
-    description { Faker::Lorem.sentence }
+    title { FFaker::Movie.title }
+    description { FFaker::Lorem.sentence }
     year { rand(1900..2010) }
     author factory: :dude
-    tag_list { rand(6).times.map { Faker::Lorem.word }.join ', ' }
+    tag_list { rand(6).times.map { FFaker::Lorem.word }.join ', ' }
   end
 
   factory :video do
-    title { Faker::Movie.title }
-    description { Faker::Lorem.sentence }
+    title { FFaker::Movie.title }
+    description { FFaker::Lorem.sentence }
     year { rand(1900..2010) }
     director factory: :dude
-    tag_list { rand(6).times.map { Faker::Lorem.word }.join ', ' }
+    tag_list { rand(6).times.map { FFaker::Lorem.word }.join ', ' }
 
     factory :movie do
       kind 'movie'

@@ -1,11 +1,24 @@
 = form_for @search, as: :search, url: entertainment_index_path, method: :get do |f|
-  = f.text_field :query
-  = f.select :author_id, Dude.all.map { |d| [d.name, d.id] }, include_blank: true
-  = f.text_field :min_year
-  = f.text_field :max_year
-  = f.text_field :tag_list
-  = f.select :sort, EntertainmentSearch.sort_values
-  = f.submit
+  %p
+    = f.label :query
+    = f.text_field :query
+  %p
+    = f.label :author_id
+    = f.select :author_id, Dude.all.map { |d| [d.name, d.id] }, include_blank: true
+  %p
+    = f.label :min_year
+    = f.text_field :min_year
+  %p
+    = f.label :max_year
+    = f.text_field :max_year
+  %p
+    = f.label :tag_list
+    = f.text_field :tag_list
+  %p
+    = f.label :sort
+    = f.select :sort, EntertainmentSearch.sort_values
+  %p
+    = f.submit
 
 - if @entertainments.any?
   %dl

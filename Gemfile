@@ -1,20 +1,20 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+gem 'rails'
 gem 'sqlite3'
 
-gem 'chewy', github: 'toptal/chewy'
-gem 'elasticsearch', '>= 1.0.0'
+gem 'chewy'
+gem 'elasticsearch'
 gem 'elasticsearch-extensions'
 gem 'active_data', github: 'pyromaniac/active_data'
-gem 'acts-as-taggable-on', '3.1.0'
+gem 'acts-as-taggable-on'
 gem 'kaminari'
 
 gem 'haml'
-gem 'sass-rails', '~> 4.0.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'sass-rails'
+gem 'uglifier'
+gem 'coffee-rails'
 
 group :development, :test do
   gem 'rspec-rails'
