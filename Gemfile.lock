@@ -1,10 +1,10 @@
 GIT
-  remote: git://github.com/pyromaniac/active_data.git
-  revision: be11978f5897298e8a6e34ff6d43fcc9585f04ff
+  remote: https://github.com/pyromaniac/active_data.git
+  revision: b79fbc01e419de4577203ebdf8c8748ae9a680e0
   specs:
-    active_data (0.3.0)
-      activemodel (>= 3.2)
-      activesupport (>= 3.2)
+    active_data (1.2.0)
+      activemodel (>= 4.0)
+      activesupport (>= 4.0)
       tzinfo
 
 GEM
@@ -60,6 +60,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1)
+    concurrent-ruby (1.1.10)
     database_cleaner (1.4.1)
     diff-lcs (1.2.5)
     elasticsearch (1.0.8)
@@ -88,7 +89,8 @@ GEM
     haml (4.0.6)
       tilt
     hike (1.2.3)
-    i18n (0.7.0)
+    i18n (0.9.5)
+      concurrent-ruby (~> 1.0)
     json (1.8.2)
     kaminari (0.16.3)
       actionpack (>= 3.0.0)
